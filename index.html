@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="mydiv">
+         
+        <h3 class="a">1</h3>
+        <h4 class="b">followers</h4>
+    </div>
+    <script >
+        var title=document.querySelector("h3");
+var followers=document.querySelector("h4");
+
+
+let count=0;
+setInterval(()=>{
+    if(count<1000)
+{title.innerText=count;
+count++;}
+
+},10)
+
+
+setTimeout(()=> {
+    followers.innerHTML="followers on instagram";
+},5000)
+
+
+
+    </script>
+</body>
+</html>
